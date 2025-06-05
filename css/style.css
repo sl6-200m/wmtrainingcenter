@@ -1,0 +1,102 @@
+/* Base Styles */
+    .gutentor-testimonial {
+        font-family: 'Arial', sans-serif;
+        padding: 40px 0;
+        background: #f8f9fa;
+    }
+    
+    .gutentor-title {
+        color: #333;
+        font-size: 32px;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .grid-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
+    .grid-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+    
+    .gutentor-grid-column {
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    
+    /* Card Styles */
+    .gutentor-single-item {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+    }
+    
+    .gutentor-single-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    
+    .gutentor-single-item-content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .gutentor-single-item-image-box {
+        text-align: center;
+        padding: 20px 20px 0;
+    }
+    
+    .gutentor-image-thumb img {
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border: 5px solid #f0f0f0;
+    }
+    
+    .gutentor-testimonial-content {
+        padding: 20px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .gutentor-single-item-title {
+        color: #2c3e50;
+        font-size: 20px;
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .gutentor-single-item-desc {
+        color: #555;
+        line-height: 1.6;
+        margin: 0 0 15px;
+        flex-grow: 1;
+        font-style: italic;
+    }
+    
+    /* Responsive Layout */
+    @media (min-width: 768px) {
+        .gutentor-grid-column {
+            flex: 0 0 33.333%;
+            max-width: 33.333%;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .gutentor-grid-column {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
